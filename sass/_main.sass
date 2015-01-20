@@ -1,7 +1,33 @@
 // Normally mainpage styles
+$ico: loca place play exp cool net bon
+=sprite-loop
+	@each $icon in $ico
+		.#{$icon}
+			i
+				+s(#{$icon})
+				display: inline-block
 .out.feature
 	background: url(../img/feature_bg.jpg)
 	+background-size(cover)
+.content
+	&__feature
+		.thng
+			float: left
+			width: 615px
+			height: 317px
+			h5
+				
+			&:nth-child(4n) 
+				margin-left: -25px 
+			&.img
+				z-index: 9
+				position: relative
+			&.text
+				background: rgba(#FFF, .5)
+				text-align: center
+		+sprite-loop
+			
+				
 	
 
 
