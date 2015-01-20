@@ -14,6 +14,5 @@ head.ready(function() {
 	// $(window).scroll(function(){
 	//     scrollFixedElements()
 	// });
-
 	console.log($('body').html());
 });
