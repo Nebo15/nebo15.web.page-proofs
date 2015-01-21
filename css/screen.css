@@ -44,8 +44,9 @@ a { color: #fff; text-decoration: none; }
 .out .content:after { content: " "; display: table; clear: both; }
 .out .content .inn { width: 960px; margin: 0 auto; padding-top: 40px; *zoom: 1; }
 .out .content .inn:after { content: " "; display: table; clear: both; }
-.out .content__header { color: #fd5653; font-family: "intro"; font-size: 16px; margin-bottom: 40px; }
-.out .content__header h2 { margin-left: -20px; text-transform: uppercase; }
+.out .content__header { font-family: "intro"; font-size: 16px; margin-bottom: 40px; }
+.out .content__header h2 { margin-left: -20px; text-transform: uppercase; color: #2FDAFF; }
+.out .content__header h2.red { color: #fd5653; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
