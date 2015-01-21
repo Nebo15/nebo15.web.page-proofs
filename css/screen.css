@@ -83,3 +83,12 @@ a { color: #fff; text-decoration: none; }
 .out.work .content__men .item .foo:after { content: " "; display: table; clear: both; }
 .out.work .content__men .item .foo .name { float: left; padding: 5px 0; width: 80%; height: 100%; border-right: 1px solid #fff; }
 .out.work .content__men .item .foo .fb { background: url('../img/icons-s0d8248103e.png') 0 -226px no-repeat; width: 16px; height: 35px; display: inline-block; margin: 4px 3px 0 0; float: right; }
+
+.out.faq { background: url(../img/faq_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+
+.content.faq { padding-left: 20px; }
+.content__header h2 { margin-left: 0 !important; }
+.content__msg .box { width: 480px; background: #FFF; padding: 20px; margin-bottom: 40px; position: relative; }
+.content__msg .box:before { border: 7px solid transparent; border-bottom: 7px solid #fff; border-left: 7px solid #fff; content: ""; margin-top: -14px; position: absolute; left: 0; top: 0; }
+.content__msg .box h4 { font-family: "intro"; text-transform: uppercase; }
+.content__msg .box p { font-family: "intro-l"; text-transform: uppercase; }

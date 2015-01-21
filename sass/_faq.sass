@@ -1,0 +1,33 @@
+.out.faq
+	background: url(../img/faq_bg.jpg)
+	+background-size(cover)
+
+.content
+	&.faq
+		padding-left: 20px 
+	&__header
+		h2
+			margin-left: 0 !important 
+	&__msg
+		.box
+			width: 480px
+			background: #FFF
+			padding: 20px
+			margin-bottom: 40px 
+			position: relative
+			&:before
+				border: 7px solid transparent
+				border-bottom: 7px solid #fff
+				border-left: 7px solid #fff
+				content: ""
+				margin-top: -14px 
+				position: absolute
+				left: 0
+				top: 0
+			h4
+				font-family: "intro"
+				text-transform: uppercase
+			p
+				font-family: "intro-l"
+				text-transform: uppercase 
+			
