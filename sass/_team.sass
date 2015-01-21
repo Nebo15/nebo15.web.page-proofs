@@ -1,0 +1,27 @@
+.out.team
+	background: url(../img/team_bg.jpg)
+	+background-size(cover)
+
+.content
+	&__people
+		+clr
+		.hero
+			padding: 40px 40px 20px 40px
+			border: 6px solid $blue
+			margin: 0 40px 40px 0 
+			float: left
+			&:nth-child(3n)
+				margin-right: 0
+			.pht
+				text-align: center
+				.img
+					width: 200px
+					height: 200px
+					img
+						width: 100%
+						height: 100%
+				p
+					font-family: "intro"
+					color: $logo  
+					text-align: center
+					margin-top: 20px  
