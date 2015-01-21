@@ -138,3 +138,8 @@ a { color: #fff; text-decoration: none; }
 .out.top .content .info p { font-family: "intro-l"; font-size: 18px; }
 .out.top .content .info p span.b { font-family: "intro"; }
 .out.top .content .info p span.i { font-family: Arial, sans-serif; }
+
+.out.quest { background: url(../img/quest_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+
+.content__quest .step { max-width: 450px; background-color: #fff; text-transform: uppercase; margin: 20px; padding: 10px; font-family: "intro"; }
+.content__quest .step h3 { color: #2fdaff; font-size: 2em; display: inline; }
