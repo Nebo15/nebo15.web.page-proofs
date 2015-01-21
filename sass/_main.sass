@@ -6,26 +6,48 @@ $ico: loca place play exp cool net bon
 			i
 				+s(#{$icon})
 				display: inline-block
+				margin-top: 40px 
 .out.feature
 	background: url(../img/feature_bg.jpg)
 	+background-size(cover)
 .content
+	padding-bottom: 40px 
 	&__feature
+		position: relative
 		.thng
 			float: left
-			width: 615px
-			height: 317px
-			h5
-				
+			height: 247px
+			width: 480px
+		
 			&:nth-child(4n) 
-				margin-left: -25px 
+				margin-left: -38px 
+				width: 499px 
 			&.img
 				z-index: 9
 				position: relative
+				img
+					max-width: 100% 
+					min-height: 100% 
 			&.text
-				background: rgba(#FFF, .5)
+				background: #fff
 				text-align: center
+				&:nth-of-type(even)
+					margin-left: -19px
+				color: #3D3C3C
+				h5
+					font-family: "intro-b"    
+					font-size: 14px 
+					text-transform: uppercase 
+					padding-top: 20px 
+				p
+					font-family: "intro-l"
+					text-transform: uppercase
+					// margin-left: -19px
+					  
+
 		+sprite-loop
+
+
 			
 				
 	

@@ -20,6 +20,9 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
+@font-face { font-family: intro; src: url("fonts/Intro.eot"); src: url("fonts/Intro.eot?#iefix") format("embedded-opentype"), url("fonts/Intro.woff2") format("woff2"), url("fonts/Intro.woff") format("woff"), url("fonts/Intro.ttf") format("truetype"), url("fonts/Intro.otf") format("opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: intro-l; src: url("fonts/Intro Light.eot"); src: url("fonts/Intro Light.eot?#iefix") format("embedded-opentype"), url("fonts/Intro Light.woff2") format("woff2"), url("fonts/Intro Light.woff") format("woff"), url("fonts/Intro Light.ttf") format("truetype"), url("fonts/Intro Light.otf") format("opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: intro-b; src: url("fonts/Intro Black.eot"); src: url("fonts/Intro Black.eot?#iefix") format("embedded-opentype"), url("fonts/Intro Black.woff2") format("woff2"), url("fonts/Intro Black.woff") format("woff"), url("fonts/Intro Black.ttf") format("truetype"), url("fonts/Intro Black.otf") format("opentype"); font-weight: normal; font-style: normal; }
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 a { color: #fff; text-decoration: none; }
@@ -31,7 +34,7 @@ a { color: #fff; text-decoration: none; }
 .out .lside .lside__logo a { background: url('../img/icons-s7e29b1c5d7.png') 0 -296px no-repeat; width: 90px; height: 73px; display: block; }
 .out .lside .lside__nav { margin-top: 200px; padding-left: 35px; }
 .out .lside .lside__nav ul { width: 10px; cursor: pointer; }
-.out .lside .lside__nav ul:hover { width: auto; }
+.out .lside .lside__nav ul:hover { width: auto; padding-right: 10px; }
 .out .lside .lside__nav ul:hover a { display: inline-block; }
 .out .lside .lside__nav ul li { margin-bottom: 10px; }
 .out .lside .lside__nav ul li:before { content: " "; background: url('../img/icons-s7e29b1c5d7.png') 0 -161px no-repeat; width: 9px; height: 9px; display: inline-block; margin-right: 20px; }
@@ -39,8 +42,10 @@ a { color: #fff; text-decoration: none; }
 .out .lside .lside__nav ul li a:hover, .out .lside .lside__nav ul li a:focus { text-decoration: underline; }
 .out .content { margin-left: 100px; *zoom: 1; }
 .out .content:after { content: " "; display: table; clear: both; }
-.out .content .inn { width: 1240px; margin: 0 auto; }
-.out .content__header { color: #fd5653; }
+.out .content .inn { width: 960px; margin: 0 auto; padding-top: 40px; *zoom: 1; }
+.out .content .inn:after { content: " "; display: table; clear: both; }
+.out .content__header { color: #fd5653; font-family: "intro"; font-size: 16px; margin-bottom: 40px; }
+.out .content__header h2 { margin-left: -20px; text-transform: uppercase; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
@@ -48,14 +53,20 @@ a { color: #fff; text-decoration: none; }
 
 .out.feature { background: url(../img/feature_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 
-.content__feature .thng { float: left; width: 615px; height: 317px; }
-.content__feature .thng:nth-child(4n) { margin-left: -25px; }
+.content { padding-bottom: 40px; }
+.content__feature { position: relative; }
+.content__feature .thng { float: left; height: 247px; width: 480px; }
+.content__feature .thng:nth-child(4n) { margin-left: -38px; width: 499px; }
 .content__feature .thng.img { z-index: 9; position: relative; }
-.content__feature .thng.text { background: rgba(255, 255, 255, 0.5); text-align: center; }
-.content__feature .loca i { background: url('../img/icons-s7e29b1c5d7.png') 0 -226px no-repeat; width: 64px; height: 60px; display: inline-block; }
-.content__feature .place i { background: url('../img/icons-s7e29b1c5d7.png') 0 -445px no-repeat; width: 64px; height: 60px; display: inline-block; }
-.content__feature .play i { background: url('../img/icons-s7e29b1c5d7.png') 0 -515px no-repeat; width: 64px; height: 60px; display: inline-block; }
-.content__feature .exp i { background: url('../img/icons-s7e29b1c5d7.png') 0 -180px no-repeat; width: 64px; height: 36px; display: inline-block; }
-.content__feature .cool i { background: url('../img/icons-s7e29b1c5d7.png') 0 -97px no-repeat; width: 64px; height: 54px; display: inline-block; }
-.content__feature .net i { background: url('../img/icons-s7e29b1c5d7.png') 0 -379px no-repeat; width: 64px; height: 56px; display: inline-block; }
-.content__feature .bon i { background: url('../img/icons-s7e29b1c5d7.png') 0 0 no-repeat; width: 64px; height: 57px; display: inline-block; }
+.content__feature .thng.img img { max-width: 100%; min-height: 100%; }
+.content__feature .thng.text { background: #fff; text-align: center; color: #3D3C3C; }
+.content__feature .thng.text:nth-of-type(even) { margin-left: -19px; }
+.content__feature .thng.text h5 { font-family: "intro-b"; font-size: 14px; text-transform: uppercase; padding-top: 20px; }
+.content__feature .thng.text p { font-family: "intro-l"; text-transform: uppercase; }
+.content__feature .loca i { background: url('../img/icons-s7e29b1c5d7.png') 0 -226px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
+.content__feature .place i { background: url('../img/icons-s7e29b1c5d7.png') 0 -445px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
+.content__feature .play i { background: url('../img/icons-s7e29b1c5d7.png') 0 -515px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
+.content__feature .exp i { background: url('../img/icons-s7e29b1c5d7.png') 0 -180px no-repeat; width: 64px; height: 36px; display: inline-block; margin-top: 40px; }
+.content__feature .cool i { background: url('../img/icons-s7e29b1c5d7.png') 0 -97px no-repeat; width: 64px; height: 54px; display: inline-block; margin-top: 40px; }
+.content__feature .net i { background: url('../img/icons-s7e29b1c5d7.png') 0 -379px no-repeat; width: 64px; height: 56px; display: inline-block; margin-top: 40px; }
+.content__feature .bon i { background: url('../img/icons-s7e29b1c5d7.png') 0 0 no-repeat; width: 64px; height: 57px; display: inline-block; margin-top: 40px; }
