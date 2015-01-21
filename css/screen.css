@@ -20,9 +20,9 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-@font-face { font-family: intro; src: url("fonts/Intro.eot"); src: url("fonts/Intro.eot?#iefix") format("embedded-opentype"), url("fonts/Intro.woff2") format("woff2"), url("fonts/Intro.woff") format("woff"), url("fonts/Intro.ttf") format("truetype"), url("fonts/Intro.otf") format("opentype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: intro-l; src: url("fonts/Intro Light.eot"); src: url("fonts/Intro Light.eot?#iefix") format("embedded-opentype"), url("fonts/Intro Light.woff2") format("woff2"), url("fonts/Intro Light.woff") format("woff"), url("fonts/Intro Light.ttf") format("truetype"), url("fonts/Intro Light.otf") format("opentype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: intro-b; src: url("fonts/Intro Black.eot"); src: url("fonts/Intro Black.eot?#iefix") format("embedded-opentype"), url("fonts/Intro Black.woff2") format("woff2"), url("fonts/Intro Black.woff") format("woff"), url("fonts/Intro Black.ttf") format("truetype"), url("fonts/Intro Black.otf") format("opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "intro"; src: url("fonts/Intro.eot"); src: url("fonts/Intro.eot?#iefix") format("embedded-opentype"), url("fonts/Intro.woff2") format("woff2"), url("fonts/Intro.woff") format("woff"), url("fonts/Intro.ttf") format("truetype"), url("fonts/Intro.otf") format("opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "intro-l"; src: url("fonts/Intro Light.eot"); src: url("fonts/Intro Light.eot?#iefix") format("embedded-opentype"), url("fonts/Intro Light.woff2") format("woff2"), url("fonts/Intro Light.woff") format("woff"), url("fonts/Intro Light.ttf") format("truetype"), url("fonts/Intro Light.otf") format("opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "intro-b"; src: url("fonts/Intro Black.eot"); src: url("fonts/Intro Black.eot?#iefix") format("embedded-opentype"), url("fonts/Intro Black.woff2") format("woff2"), url("fonts/Intro Black.woff") format("woff"), url("fonts/Intro Black.ttf") format("truetype"), url("fonts/Intro Black.otf") format("opentype"); font-weight: normal; font-style: normal; }
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 a { color: #fff; text-decoration: none; }
@@ -115,6 +115,18 @@ a { color: #fff; text-decoration: none; }
 .content__people .hero .pht .img { width: 200px; height: 200px; }
 .content__people .hero .pht .img img { width: 100%; height: 100%; }
 .content__people .hero .pht p { font-family: "intro"; color: #fd5653; text-align: center; margin-top: 20px; }
+
+.out.about { background: url(../img/about_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+
+.content__about { width: 350px; padding: 20px; background: #fff; position: relative; }
+.content__about:before { border: 10px solid transparent; border-left: 10px solid white; border-top: 10px solid white; content: ""; display: block; position: absolute; top: 0; right: 0; margin-right: -20px; }
+.content__about p { font-family: "intro-l"; text-transform: uppercase; font-size: 14px; }
+.content__map { *zoom: 1; width: 100%; margin-top: 40px; position: relative; }
+.content__map:after { content: " "; display: table; clear: both; }
+.content__map .m { width: 500px; display: inline-block; margin-top: 40px; }
+.content__map .m img { max-width: 100%; }
+.content__map .img { width: 300px; display: inline-block; position: absolute; top: 0; margin-left: -45px; }
+.content__map .img img { max-width: 100%; }
 
 .out.top { background: url(../img/top-page_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 .out.top .content .inn { text-align: center; }
