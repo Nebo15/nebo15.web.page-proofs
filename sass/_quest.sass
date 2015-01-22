@@ -1,17 +1,256 @@
+%bd-top-right
+	border-top: 1px solid
+	border-right: 1px solid
+%bd-bot-left
+	border-bottom: 1px solid
+	border-left: 1px solid
+%bd-bot-right
+	border-bottom: 1px solid
+	border-right: 1px solid
+%cir-l
+	width: 10px
+	height: 10px
+	+border-radius(50%)
+	background-color: $logo  
+%cir-s
+	width: 6px
+	height: 6px
+	+border-radius(50%)
+	background-color: $logo  
 .out.quest
 	background: url(../img/quest_bg.jpg)
 	+background-size(cover)
 
 .content
 	&__quest
-		.step
-			max-width: 450px 
+		position: relative
+		.map
+			width: 480px
+			float: left
+			// margin-top: 40px
+			position: relative
+			top: 100px 
+			img
+				max-width: 100% 
+		.move
+			max-width: 550px 
 			background-color: #fff
 			text-transform: uppercase
 			margin: 20px 
-			padding: 10px
-			font-family: "intro" 
-			h3
-				color: $blue
-				font-size: 2em 
-				display: inline  
+			// padding: 10px
+			font-family: "intro"
+			display: table
+			position: relative
+			+clr
+			&:nth-of-type(2)
+				left: -360px
+				&:after
+					content: ""
+					+trian-bot-left
+					position: absolute
+					left: 0
+					bottom: 0
+					margin-bottom: -20px
+			&:nth-of-type(3)
+				margin-top: -115px 
+				width: 380px 
+				&:before
+					content: ""
+					+trian-top-left
+					position: absolute
+					left: 0
+					top: -20px
+			&:nth-of-type(4)
+				left: -40px
+				margin-top: 5px
+				margin-bottom: 0  
+				&:before
+					content: ""
+					+trian-top-right
+					position: absolute
+					right: 150px
+					top: -20px
+					top: -20px
+			&:nth-of-type(5)
+				left: 450px
+				width: 420px
+				margin-top: 25px 
+				&:before
+					content: ""
+					+trian-top-left
+					position: absolute
+					right: 220px
+					top: -20px
+			&:nth-of-type(6)
+				left: 220px
+				margin-top: 6px
+				&:before
+					content: ""
+					+trian-top-left
+					position: absolute
+					left: 0
+					top: -20px
+			&:nth-of-type(7)
+				left: 120px
+				margin-top: 5px
+				&:before
+					content: ""
+					+trian-top-left
+					position: absolute
+					left: 50%
+					top: -20px
+			&:nth-of-type(8)
+				left: 580px
+				margin-top: 1px
+				&:before
+					content: ""
+					+trian-top-right
+					position: absolute
+					right: 0
+					top: -20px
+			&:nth-of-type(9)
+				left: 70px
+				margin-top: 4px
+				&:before
+					content: ""
+					+trian-top-right
+					position: absolute
+					right: 120px
+					top: -20px
+					  
+			.n
+				display: table-cell
+				vertical-align: middle 
+				h3
+					color: $blue
+					font-size: 2em 
+					margin-left: -5px
+			.text
+				display: table-cell 
+				vertical-align: middle
+				padding: 10px 15px
+				color: #3D3C3C 
+		section
+			position: relative
+			color: $logo 
+			top: 5px
+			&:after, &:before
+				content: ""
+				position: absolute 
+			&:nth-of-type(1)
+				width: 156px
+				height: 134px 
+				@extend %bd-top-right
+				left: 121px
+				z-index: 2 
+				&:before
+					@extend %cir-l
+					top: -5px
+					left: -5px
+				&:after
+					@extend %cir-s
+					bottom: -3px
+					right: -3px
+			&:nth-of-type(2)
+				width: 78px
+				height: 16px
+				top: -112px  
+				left: 401px
+				@extend %bd-bot-left
+				&:before
+					@extend %cir-s
+					top: -3px
+					left: -3px
+				&:after
+					@extend %cir-l
+					bottom: -5px
+					right: -5px
+			&:nth-of-type(3)
+				width: 1px
+				height: 18px
+				left: 750px 
+				top: -109px 
+				@extend %bd-bot-left
+				&:before
+					@extend %cir-s
+					top: -3px
+					left: -3px
+					width: 5px
+					height: 5px  
+				&:after
+					@extend %cir-l
+					bottom: -5px
+					right: -4px
+			&:nth-of-type(4)
+				width: 1px
+				height: 18px
+				left: 650px 
+				top: -131px 
+				@extend %bd-bot-left
+				&:before
+					@extend %cir-s
+					top: -3px
+					left: -3px
+					width: 5px
+					height: 5px 
+				&:after
+					@extend %cir-l
+					bottom: -5px
+					right: -4px
+			&:nth-of-type(5)
+				width: 230px
+				height: 17px
+				left: 239px 
+				top: -163px 
+				@extend %bd-bot-right
+				&:before
+					@extend %cir-l
+					bottom: -5px
+					left: -3px
+				&:after
+					@extend %cir-s
+					top: -5px
+					right: -4px
+			&:nth-of-type(6)
+				width: 145px
+				height: 15px
+				left: 241px 
+				top: -97px 
+				@extend %bd-bot-left
+				&:before
+					@extend %cir-l
+					bottom: -5px
+					right: -3px
+				&:after
+					@extend %cir-s
+					top: -5px
+					left: -4px
+			&:nth-of-type(7)
+				width: 243px
+				height: 11px
+				left: 632px 
+				top: -92px 
+				@extend %bd-bot-left
+				&:before
+					@extend %cir-l
+					bottom: -5px
+					right: -3px
+				&:after
+					@extend %cir-s
+					top: -5px
+					left: -4px
+			&:nth-of-type(8)
+				width: 82px
+				height: 9px
+				left: 518px 
+				top: -106px 
+				@extend %bd-bot-right
+				&:before
+					@extend %cir-l
+					bottom: -5px
+					left: -3px
+				&:after
+					@extend %cir-s
+					top: -5px
+					right: -4px
+
