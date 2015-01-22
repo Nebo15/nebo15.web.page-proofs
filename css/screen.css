@@ -20,7 +20,7 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-@font-face { font-family: "intro"; src: url("fonts/Intro.eot"); src: url("fonts/Intro.eot?#iefix") format("embedded-opentype"), url("fonts/Intro.woff2") format("woff2"), url("fonts/Intro.woff") format("woff"), url("fonts/Intro.ttf") format("truetype"), url("fonts/Intro.otf") format("opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "intro"; src: url("fonts/intro.eot"); src: url("fonts/intro.eot?#iefix") format("embedded-opentype"), url("fonts/intro.woff2") format("woff2"), url("fonts/intro.woff") format("woff"), url("fonts/intro.ttf") format("truetype"), url("fonts/intro.otf") format("opentype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "intro-l"; src: url("fonts/Intro Light.eot"); src: url("fonts/Intro Light.eot?#iefix") format("embedded-opentype"), url("fonts/Intro Light.woff2") format("woff2"), url("fonts/Intro Light.woff") format("woff"), url("fonts/Intro Light.ttf") format("truetype"), url("fonts/Intro Light.otf") format("opentype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "intro-b"; src: url("fonts/Intro Black.eot"); src: url("fonts/Intro Black.eot?#iefix") format("embedded-opentype"), url("fonts/Intro Black.woff2") format("woff2"), url("fonts/Intro Black.woff") format("woff"), url("fonts/Intro Black.ttf") format("truetype"), url("fonts/Intro Black.otf") format("opentype"); font-weight: normal; font-style: normal; }
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
@@ -44,6 +44,7 @@ a { color: #fff; text-decoration: none; }
 .out .content:after { content: " "; display: table; clear: both; }
 .out .content .inn { width: 960px; margin: 0 auto; padding-top: 40px; *zoom: 1; }
 .out .content .inn:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 1100px) { .out .content .inn { margin-left: 10px; } }
 .out .content__header { font-family: "intro"; font-size: 16px; margin-bottom: 40px; }
 .out .content__header h2 { margin-left: -20px; text-transform: uppercase; color: #2FDAFF; }
 @media only screen and (max-width: 1100px) { .out .content__header h2 { margin-left: 10px; } }
@@ -63,8 +64,8 @@ a { color: #fff; text-decoration: none; }
 .content__feature .thng.img img { max-width: 100%; min-height: 100%; }
 .content__feature .thng.text { background: #fff; text-align: center; color: #3D3C3C; }
 .content__feature .thng.text:nth-of-type(even) { margin-left: -19px; }
-.content__feature .thng.text h5 { font-family: "intro-b", Arial, sans-serif; font-size: 14px; text-transform: uppercase; padding-top: 20px; }
-.content__feature .thng.text p { font-family: "intro-l", Helvetica, Arial, sans-serif; text-transform: uppercase; }
+.content__feature .thng.text h5 { font-family: "intro", Arial, sans-serif; font-size: 14px; text-transform: uppercase; padding-top: 20px; }
+.content__feature .thng.text p { margin: 0 auto; width: 408px; font-family: "intro-l", Helvetica, Arial, sans-serif; text-transform: uppercase; }
 .content__feature .loca i { background: url('../img/icons-s6109553f29.png') 0 -271px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
 .content__feature .place i { background: url('../img/icons-s6109553f29.png') 0 -880px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
 .content__feature .play i { background: url('../img/icons-s6109553f29.png') 0 -950px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
@@ -130,11 +131,11 @@ a { color: #fff; text-decoration: none; }
 
 .out.top { background: url(../img/top-page_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 .out.top .content .inn { text-align: center; }
-.out.top .content__logo { text-align: center; margin-top: 60px; }
+.out.top .content__logo { text-align: center; margin-top: 80px; }
 .out.top .content__logo .bg { margin: 0 auto; width: 300px; display: block; }
 .out.top .content__logo .bg img { max-width: 100%; }
 .out.top .content .info { color: #fff; }
-.out.top .content .info h3 { font-family: "intro", Arial, sans-serif; font-size: 27px; }
+.out.top .content .info h3 { font-family: "intro", Arial, sans-serif; font-size: 18px; letter-spacing: 15px; margin-bottom: 20px; }
 .out.top .content .info p { font-family: "intro-l", Helvetica, sans-serif; font-size: 18px; }
 .out.top .content .info p span.b { font-family: "intro", Arial, sans-serif; }
 .out.top .content .info p span.i { font-family: Arial, sans-serif; }
