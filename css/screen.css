@@ -97,11 +97,12 @@ a { color: #fff; text-decoration: none; }
 .out.price { background: url(../img/price_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 
 .content__price .inn .about { margin: 0 auto; padding: 10px; border: 6px solid #2fdaff; width: 480px; }
-.content__price .inn .about .b { background: #FFF; text-align: center; }
-.content__price .inn .about .num { width: 100px; height: 100px; position: relative; display: inline-block; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; border: 4px solid transparent; margin: 20px 0; box-shadow: 0 0 0 6px crimson; }
+.content__price .inn .about .b { overflow: hidden; text-align: center; position: relative; }
+.content__price .inn .about .b .wh { width: 120px; height: 120px; margin: 0 auto; left: 50%; top: 14px; -moz-transform: translate(-50%); -ms-transform: translate(-50%); -webkit-transform: translate(-50%); transform: translate(-50%); display: block; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; box-shadow: 0 0 0 350px #fff; position: absolute; }
+.content__price .inn .about .num { width: 100px; height: 100px; position: relative; display: inline-block; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; border: 4px solid transparent; margin: 20px 0; background-color: #FFF; }
 .content__price .inn .about .num h4 { margin-top: 30px; color: #fd5653; font-family: "intro", Arial, sans-serif; font-size: 28px; }
 .content__price .inn .about .num h4 .cur { font-family: Arial; font-weight: bolder; }
-.content__price .inn .about p { font-family: "intro-l", Arial, sans-serif; font-weight: 100; font-size: 16px; padding-bottom: 20px; text-transform: uppercase; }
+.content__price .inn .about p { font-family: "intro-l", Arial, sans-serif; font-weight: 100; font-size: 16px; padding-bottom: 20px; text-transform: uppercase; position: relative; z-index: 222; }
 .content__price .inn .join { text-align: center; margin-top: 20px; }
 .content__price .inn .join .bd { margin: 0 auto; width: 200px; height: 50px; padding: 5px; border: 6px solid #fd5653; }
 .content__price .inn .join input { width: 200px; height: 50px; background: #2fdaff; color: #fff; font-family: "intro", Arial, sans-serif; cursor: pointer; }

@@ -9,10 +9,23 @@
 				margin: 0 auto
 				padding: 10px 
 				border: 6px solid $blue
-				width: 480px 
+				width: 480px
 				.b
-					background: #FFF 
+					overflow: hidden 
 					text-align: center
+					position: relative
+					.wh
+						width: 120px
+						height: 120px 
+						margin: 0 auto
+						left: 50%
+						top: 14px
+						+transform(translate(-50%)) 
+						display: block
+						+border-radius(50%)
+						box-shadow: 0 0 0 350px #fff
+						position: absolute
+						
 				.num
 					width: 100px 
 					height: 100px
@@ -21,7 +34,8 @@
 					+border-radius(50%)
 					border: 4px solid transparent
 					margin: 20px  0
-					box-shadow: 0 0 0 6px  crimson
+					background-color: #FFF 
+					// box-shadow: 0 0 0 6px crimson
 					h4
 						margin-top: 30px 
 						color: $logo
@@ -35,7 +49,9 @@
 					font-weight: 100 
 					font-size: 16px
 					padding-bottom: 20px 
-					text-transform: uppercase      
+					text-transform: uppercase 
+					position: relative
+					z-index: 222      
 			.join
 				text-align: center
 				margin-top: 20px 
