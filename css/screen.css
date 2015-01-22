@@ -160,21 +160,21 @@ a { color: #fff; text-decoration: none; }
 .content__quest .move:after { content: " "; display: table; clear: both; }
 .content__quest .move:nth-of-type(2) { left: -360px; width: 282px; }
 .content__quest .move:nth-of-type(2) .text { font-size: 11px !important; }
-.content__quest .move:nth-of-type(2):after { content: ""; border: 10px solid transparent; border-left: 10px solid white; border-top: 10px solid white; position: absolute; left: 0; bottom: 0; margin-bottom: -20px; }
+.content__quest .move:nth-of-type(2):after { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 20px 20px 0 0; border-color: #fff transparent transparent transparent; position: absolute; left: 0; bottom: 0; margin-bottom: -20px; }
 .content__quest .move:nth-of-type(3) { margin-top: -115px; width: 380px; }
-.content__quest .move:nth-of-type(3):before { content: ""; border: 10px solid transparent; border-bottom: 10px solid white; border-left: 10px solid white; position: absolute; left: 0; top: -20px; }
+.content__quest .move:nth-of-type(3):before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 20px 0 0 20px; border-color: transparent transparent transparent #fff; position: absolute; left: 0; top: -20px; }
 .content__quest .move:nth-of-type(4) { left: -40px; margin-top: 5px; margin-bottom: 0; }
-.content__quest .move:nth-of-type(4):before { content: ""; border: 10px solid transparent; border-bottom: 10px solid white; border-right: 10px solid white; position: absolute; right: 150px; top: -20px; top: -20px; }
+.content__quest .move:nth-of-type(4):before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 0 0 20px 20px; border-color: transparent transparent #fff transparent; position: absolute; right: 150px; top: -20px; top: -20px; }
 .content__quest .move:nth-of-type(5) { left: 450px; width: 420px; margin-top: 25px; }
-.content__quest .move:nth-of-type(5):before { content: ""; border: 10px solid transparent; border-bottom: 10px solid white; border-left: 10px solid white; position: absolute; right: 220px; top: -20px; }
+.content__quest .move:nth-of-type(5):before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 20px 0 0 20px; border-color: transparent transparent transparent #fff; position: absolute; right: 220px; top: -20px; }
 .content__quest .move:nth-of-type(6) { left: 220px; margin-top: 6px; }
-.content__quest .move:nth-of-type(6):before { content: ""; border: 10px solid transparent; border-bottom: 10px solid white; border-left: 10px solid white; position: absolute; left: 0; top: -20px; }
+.content__quest .move:nth-of-type(6):before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 20px 0 0 20px; border-color: transparent transparent transparent #fff; position: absolute; left: 0; top: -20px; }
 .content__quest .move:nth-of-type(7) { left: 120px; margin-top: 5px; width: 493px; }
-.content__quest .move:nth-of-type(7):before { content: ""; border: 10px solid transparent; border-bottom: 10px solid white; border-left: 10px solid white; position: absolute; left: 50%; top: -20px; }
+.content__quest .move:nth-of-type(7):before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 20px 0 0 20px; border-color: transparent transparent transparent #fff; position: absolute; left: 50%; top: -20px; }
 .content__quest .move:nth-of-type(8) { left: 580px; margin-top: 1px; width: 274px; }
-.content__quest .move:nth-of-type(8):before { content: ""; border: 10px solid transparent; border-bottom: 10px solid white; border-right: 10px solid white; position: absolute; right: 0; top: -20px; }
+.content__quest .move:nth-of-type(8):before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 0 0 20px 20px; border-color: transparent transparent #fff transparent; position: absolute; right: 0; top: -20px; }
 .content__quest .move:nth-of-type(9) { left: 70px; margin-top: 4px; }
-.content__quest .move:nth-of-type(9):before { content: ""; border: 10px solid transparent; border-bottom: 10px solid white; border-right: 10px solid white; position: absolute; right: 120px; top: -20px; }
+.content__quest .move:nth-of-type(9):before { content: ""; width: 0px; height: 0px; border-style: solid; border-width: 0 0 20px 20px; border-color: transparent transparent #fff transparent; position: absolute; right: 120px; top: -20px; }
 .content__quest .move .n { display: table-cell; vertical-align: middle; }
 .content__quest .move .n h3 { color: #2fdaff; font-size: 2em; margin-left: -5px; }
 .content__quest .move .text { display: table-cell; vertical-align: middle; padding: 10px 15px; color: #3D3C3C; font-size: 12px; }

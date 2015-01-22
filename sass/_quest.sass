@@ -27,7 +27,6 @@
 		.map
 			width: 480px
 			float: left
-			// margin-top: 40px
 			position: relative
 			top: 100px 
 			img
@@ -37,7 +36,6 @@
 			background-color: #fff
 			text-transform: uppercase
 			margin: 20px 
-			// padding: 10px
 			font-family: "intro", Arial, sans-serif
 			display: table
 			position: relative
@@ -49,7 +47,7 @@
 					font-size: 11px !important 
 				&:after
 					content: ""
-					+trian-bot-left
+					+arr(20,20, #fff, tl)
 					position: absolute
 					left: 0
 					bottom: 0
@@ -59,7 +57,7 @@
 				width: 380px 
 				&:before
 					content: ""
-					+trian-top-left
+					+arr(20,20,#fff,bl)
 					position: absolute
 					left: 0
 					top: -20px
@@ -69,7 +67,7 @@
 				margin-bottom: 0  
 				&:before
 					content: ""
-					+trian-top-right
+					+arr(20,20, #fff, br)
 					position: absolute
 					right: 150px
 					top: -20px
@@ -80,7 +78,7 @@
 				margin-top: 25px 
 				&:before
 					content: ""
-					+trian-top-left
+					+arr(20,20,#fff,bl)
 					position: absolute
 					right: 220px
 					top: -20px
@@ -89,7 +87,7 @@
 				margin-top: 6px
 				&:before
 					content: ""
-					+trian-top-left
+					+arr(20,20,#fff,bl)
 					position: absolute
 					left: 0
 					top: -20px
@@ -99,7 +97,7 @@
 				width: 493px 
 				&:before
 					content: ""
-					+trian-top-left
+					+arr(20,20,#fff,bl)
 					position: absolute
 					left: 50%
 					top: -20px
@@ -109,7 +107,7 @@
 				width: 274px 
 				&:before
 					content: ""
-					+trian-top-right
+					+arr(20,20, #fff, br)
 					position: absolute
 					right: 0
 					top: -20px
@@ -118,7 +116,7 @@
 				margin-top: 4px
 				&:before
 					content: ""
-					+trian-top-right
+					+arr(20,20, #fff, br)
 					position: absolute
 					right: 120px
 					top: -20px
