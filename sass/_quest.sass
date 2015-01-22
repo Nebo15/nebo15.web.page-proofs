@@ -38,12 +38,15 @@
 			text-transform: uppercase
 			margin: 20px 
 			// padding: 10px
-			font-family: "intro"
+			font-family: "intro", Arial, sans-serif
 			display: table
 			position: relative
 			+clr
 			&:nth-of-type(2)
 				left: -360px
+				width: 282px 
+				.text
+					font-size: 11px !important 
 				&:after
 					content: ""
 					+trian-bot-left
@@ -93,6 +96,7 @@
 			&:nth-of-type(7)
 				left: 120px
 				margin-top: 5px
+				width: 493px 
 				&:before
 					content: ""
 					+trian-top-left
@@ -102,6 +106,7 @@
 			&:nth-of-type(8)
 				left: 580px
 				margin-top: 1px
+				width: 274px 
 				&:before
 					content: ""
 					+trian-top-right
@@ -130,6 +135,7 @@
 				vertical-align: middle
 				padding: 10px 15px
 				color: #3D3C3C 
+				font-size: 12px 
 		section
 			position: relative
 			color: $logo 
