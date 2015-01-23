@@ -90,7 +90,7 @@ a { color: #fff; text-decoration: none; }
 .content.faq { padding-left: 20px; }
 .content__header h2 { margin-left: 0 !important; }
 .content__msg .box { width: 480px; background: #FFF; padding: 20px; margin-bottom: 40px; position: relative; }
-.content__msg .box:before { border: 7px solid transparent; border-bottom: 7px solid #fff; border-left: 7px solid #fff; content: ""; margin-top: -14px; position: absolute; left: 0; top: 0; }
+.content__msg .box:before { width: 0px; height: 0px; border-style: solid; border-width: 14px 0 0 14px; border-color: transparent transparent transparent #fff; content: ""; margin-top: -14px; position: absolute; left: 0; top: 0; }
 .content__msg .box h4 { font-family: "intro", Arial, sans-serif; text-transform: uppercase; }
 .content__msg .box p { font-family: "intro-l", Helvetica, Arial, sans-serif; text-transform: uppercase; }
 
@@ -121,7 +121,7 @@ a { color: #fff; text-decoration: none; }
 .out.about { background: url(../img/about_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 
 .content__about { width: 350px; padding: 20px; background: #fff; position: relative; }
-.content__about:before { border: 10px solid transparent; border-left: 10px solid white; border-top: 10px solid white; content: ""; display: block; position: absolute; top: 0; right: 0; margin-right: -20px; }
+.content__about:before { width: 0px; height: 0px; border-style: solid; border-width: 20px 20px 0 0; border-color: #fff transparent transparent transparent; content: ""; display: block; position: absolute; top: 0; right: 0; margin-right: -20px; }
 .content__about p { font-family: "intro-l", Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 14px; }
 .content__map { *zoom: 1; width: 100%; margin-top: 40px; position: relative; }
 .content__map:after { content: " "; display: table; clear: both; }
