@@ -86,11 +86,13 @@ a
 			ul
 				width: 10px
 				cursor: pointer
+				+transition(.2s)
 				&:hover
-					width: auto
-					padding-right: 10px
+					// width: auto
+					+transition(.2s)
+					// padding-right: 10px
 					a
-						display: inline-block
+						// display: inline-block
 				li
 					margin-bottom: 10px 
 					&:before
@@ -102,6 +104,11 @@ a
 						min-height: 15px 
 						+hover-link
 						display: none
+						// visibility: hidden
+						+transition(.2s)
+						&.open
+							display: inline-block
+						
 	.content
 		margin-left: 100px 
 		+clr
