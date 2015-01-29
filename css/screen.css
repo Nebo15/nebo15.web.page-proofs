@@ -29,15 +29,16 @@ a { color: #fff; text-decoration: none; }
 
 .out { *zoom: 1; width: 100%; min-height: 100%; }
 .out:after { content: " "; display: table; clear: both; }
-.out .lside { min-height: 100%; max-height: 100%; background-color: #fd5653; float: left; position: fixed; top: 0; display: block; padding: 5px; z-index: 9999; *zoom: 1; }
+.out .lside { width: 50px; min-height: 100%; max-height: 100%; background-color: #fd5653; float: left; position: fixed; top: 0; display: block; padding: 5px; z-index: 9999; *zoom: 1; }
 .out .lside:after { content: " "; display: table; clear: both; }
-.out .lside .lside__logo a { background: url('../img/icons-s6109553f29.png') 0 -341px no-repeat; width: 90px; height: 73px; display: block; }
-.out .lside .lside__nav { margin-top: 200px; padding-left: 35px; }
+.out .lside .lside__logo a { max-width: 50px; display: block; }
+.out .lside .lside__logo a img { width: 100%; }
+.out .lside .lside__nav { margin-top: 200px; padding-left: 20px; }
 .out .lside .lside__nav ul { width: 10px; cursor: pointer; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; transition: 0.2s; }
 .out .lside .lside__nav ul:hover { -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; transition: 0.2s; }
 .out .lside .lside__nav ul li { margin-bottom: 10px; }
-.out .lside .lside__nav ul li:before { content: " "; background: url('../img/icons-s6109553f29.png') 0 -161px no-repeat; width: 9px; height: 9px; display: inline-block; margin-right: 20px; }
-.out .lside .lside__nav ul li a { min-height: 15px; text-decoration: none; display: none; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; transition: 0.2s; }
+.out .lside .lside__nav ul li:before { content: " "; background: url('../img/icons-sc30b0876b0.png') 0 -161px no-repeat; width: 9px; height: 9px; display: inline-block; margin-right: 20px; }
+.out .lside .lside__nav ul li a { font-family: "intro-l"; min-height: 15px; text-decoration: none; display: none; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; transition: 0.2s; }
 .out .lside .lside__nav ul li a:hover, .out .lside .lside__nav ul li a:focus { text-decoration: underline; }
 .out .lside .lside__nav ul li a.open { display: inline-block; }
 .out .content { margin-left: 100px; *zoom: 1; }
@@ -66,13 +67,13 @@ a { color: #fff; text-decoration: none; }
 .content__feature .thng.text:nth-of-type(even) { margin-left: -19px; }
 .content__feature .thng.text h5 { font-family: "intro", Arial, sans-serif; font-size: 14px; text-transform: uppercase; padding-top: 20px; }
 .content__feature .thng.text p { margin: 0 auto; width: 408px; font-family: "intro-l", Helvetica, Arial, sans-serif; text-transform: uppercase; }
-.content__feature .loca i { background: url('../img/icons-s6109553f29.png') 0 -271px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
-.content__feature .place i { background: url('../img/icons-s6109553f29.png') 0 -880px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
-.content__feature .play i { background: url('../img/icons-s6109553f29.png') 0 -950px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
-.content__feature .exp i { background: url('../img/icons-s6109553f29.png') 0 -180px no-repeat; width: 64px; height: 36px; display: inline-block; margin-top: 40px; }
-.content__feature .cool i { background: url('../img/icons-s6109553f29.png') 0 -97px no-repeat; width: 64px; height: 54px; display: inline-block; margin-top: 40px; }
-.content__feature .net i { background: url('../img/icons-s6109553f29.png') 0 -814px no-repeat; width: 64px; height: 56px; display: inline-block; margin-top: 40px; }
-.content__feature .bon i { background: url('../img/icons-s6109553f29.png') 0 0 no-repeat; width: 64px; height: 57px; display: inline-block; margin-top: 40px; }
+.content__feature .loca i { background: url('../img/icons-sc30b0876b0.png') 0 -256px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
+.content__feature .place i { background: url('../img/icons-sc30b0876b0.png') 0 -865px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
+.content__feature .play i { background: url('../img/icons-sc30b0876b0.png') 0 -935px no-repeat; width: 64px; height: 60px; display: inline-block; margin-top: 40px; }
+.content__feature .exp i { background: url('../img/icons-sc30b0876b0.png') 0 -180px no-repeat; width: 64px; height: 36px; display: inline-block; margin-top: 40px; }
+.content__feature .cool i { background: url('../img/icons-sc30b0876b0.png') 0 -97px no-repeat; width: 64px; height: 54px; display: inline-block; margin-top: 40px; }
+.content__feature .net i { background: url('../img/icons-sc30b0876b0.png') 0 -799px no-repeat; width: 64px; height: 56px; display: inline-block; margin-top: 40px; }
+.content__feature .bon i { background: url('../img/icons-sc30b0876b0.png') 0 0 no-repeat; width: 64px; height: 57px; display: inline-block; margin-top: 40px; }
 
 .out.work { background: url(../img/work_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 .out.work .content__men { margin: 0 auto; *zoom: 1; }
@@ -83,7 +84,8 @@ a { color: #fff; text-decoration: none; }
 .out.work .content__men .item .foo { background: #fd5653; max-width: 100%; color: #fff; font-family: "intro", Arial, sans-serif; padding: 0 5px; margin-top: -5px; border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff; *zoom: 1; }
 .out.work .content__men .item .foo:after { content: " "; display: table; clear: both; }
 .out.work .content__men .item .foo .name { float: left; padding: 5px 0; width: 80%; height: 100%; border-right: 1px solid #fff; }
-.out.work .content__men .item .foo .fb { background: url('../img/icons-s6109553f29.png') 0 -226px no-repeat; width: 16px; height: 35px; display: inline-block; margin: 4px 3px 0 0; float: right; }
+.out.work .content__men .item .foo .fb { display: inline-block; margin: 4px 3px 0 0; float: right; }
+.out.work .content__men .item .foo .fb a i { background: url('../img/icons-sc30b0876b0.png') 0 -226px no-repeat; width: 9px; height: 20px; display: inline-block; position: relative; top: 8px; right: 3px; }
 
 .out.faq { background: url(../img/faq_bg.jpg); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 

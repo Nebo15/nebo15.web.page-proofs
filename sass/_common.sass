@@ -66,6 +66,7 @@ a
 	width: 100%
 	min-height: 100% 
 	.lside
+		width: 50px
 		min-height: 100% 
 		max-height: 100% 
 		background-color: $logo
@@ -78,11 +79,13 @@ a
 		+clr
 		.lside__logo
 			a
-				+s(logo)
+				max-width: 50px 
 				display: block
+				img
+					width: 100% 
 		.lside__nav
 			margin-top: 200px 
-			padding-left: 35px
+			padding-left: 20px
 			ul
 				width: 10px
 				cursor: pointer
@@ -101,10 +104,10 @@ a
 						display: inline-block
 						margin-right: 20px
 					a
+						font-family: "intro-l" 
 						min-height: 15px 
 						+hover-link
 						display: none
-						// visibility: hidden
 						+transition(.2s)
 						&.open
 							display: inline-block
